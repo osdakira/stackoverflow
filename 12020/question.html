@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+
+    <TITLE>妖怪クロック(アナログ) - JavaScript</TITLE>
+
+    <style type="text/css">
+     .butt {
+         background: maroon;
+         color: gold;
+     }
+    </style>
+  </head>
+
+  <body bgcolor="black" text="white">
+
+    <div id="clock" style="visibility:hidden">
+      <div id="Od" style="position:absolute;top:0px;left:0px">
+        <div style="position:relative">
+        </div>
+      </div>
+
+      <div id="Of" style="position:absolute;top:0px;left:0px">
+        <div style="position:relative">
+        </div>
+      </div>
+
+      <div id="Oh" style="position:absolute;top:0px;left:0px">
+        <div style="position:relative">
+        </div>
+      </div>
+
+      <div id="Om" style="position:absolute;top:0px;left:0px">
+        <div style="position:relative">
+        </div>
+      </div>
+
+      <div id="Os" style="position:absolute;top:0px;left:0px">
+        <div style="position:relative">
+        </div>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <div align="center">
+      <div>
+        <input class="butt" type="button" id="tog" value="今何時？" onclick="toggle()">
+      </div><br>
+      <div>
+        <!-- <select id="size" style="background:lightblue" disabled>
+        <option onClick="changeSIZE1()">２.５倍</option>
+        <option onClick="changeSIZE2()" selected>サイズ</option>
+        <option onClick="changeSIZE3()">半　 分</option>
+        </select> -->
+        <select id="size" style="background:lightblue" onChange="changeSIZE(this.value)" disabled>
+          <option value="2.5">２.５倍</option>
+          <option value="1" selected>サイズ</option>
+          <option value="0.5">半　 分</option>
+        </select>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="version1.js"></script> -->
+  <script src="version2.js"></script>
+  <!-- <script src="version3.js"></script> -->
+</html>
